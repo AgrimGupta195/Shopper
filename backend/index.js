@@ -12,7 +12,7 @@ const { error } = require('console');
 app.use(express.json());
 app.use(cors());
 //  Database connection with mongo
-mongoose.connect('mongodb+srv://agrimgupt195:vNa2ZIvCnkSD15LG@cluster0.mos5p.mongodb.net/e-commerce');
+mongoose.connect('process.env.MONGODB_URI');
 // Api Creation
 app.get('/',(req,res)=>{
     res.send('running');
