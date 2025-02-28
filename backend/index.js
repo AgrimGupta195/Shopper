@@ -10,7 +10,6 @@ const { type } = require('os');
 const { error } = require('console');
 
 app.use(express.json());
-app.use(cors());
 //  Database connection with mongo
 mongoose.connect('process.env.MONGODB_URI');
 // Api Creation
